@@ -1,3 +1,5 @@
+For https://bugs.chromium.org/p/gyp/issues/detail?id=508
+
 Problem: the --generator-output option in gyp causes weirdness
 
 This is a problem because tools like node-gyp depend on this 
