@@ -21,8 +21,7 @@ gyp file is ../world/project.gyp. This is what GYP calculates
 and uses (even if we specify full, absolute paths). However 
 when we specify --generator-output=build (for instance), GYP
 switches to that directory and THEN generates the makefiles for
-world. These end up in `build/../world/project.gyp`, which is
-wrong.
+world. These end up in `build/../world/`, which is wrong.
 
 Solution: if user specifies --generator-output, then GYP must
 calculate its relative paths FROM THIS DIRECTORY and not from
